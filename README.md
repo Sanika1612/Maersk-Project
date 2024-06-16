@@ -1,29 +1,34 @@
-Here's a basic structure for your README file outlining the tasks and how to run the website:
 
+# Crafty - Handmade Products
 ---
 
-# Handmade Crafts Website - CraftGalleria
+## Overview
+Crafty is a simple and visually appealing website designed for a small business specializing in selling handmade crafts. This website allows customers to browse through featured products, learn about the business, and contact the business for inquiries. The website is fully responsive and includes a product slider for showcasing different items.
 
-This project is a simple website developed for a small business specializing in selling handmade crafts. The website showcases their products, provides information about the business, and allows customers to contact them for inquiries.
+## Features
 
-## Tasks
-
-1. **HTML/CSS:**
-   - Created a homepage with:
+1. **Homepage**
+   
      - Header with the business name and navigation menu (Home, Products, Contact)
      - Featured section showcasing products with images and brief descriptions
      - About section introducing the business
      - Contact section with a form for inquiries
      - Footer with social media links (Facebook, Instagram, Twitter)
 
-2. **JavaScript:**
-   - Implemented simple form validation for the contact form:
+2. **Contact Form Validation**
+
      - Name field must not be empty
      - Email field must contain a valid email address
      - Message field must not be empty
 
 3. **Responsiveness:**
+   
    - Ensured that the website layout adjusts appropriately for different screen sizes (desktop, tablet, mobile).
+
+4. **Product Slider**
+
+   - A slider in the product section to showcase multiple product cards with designer information.
+   - Navigation buttons for sliding through the products.
 
 
 ## How to Run
