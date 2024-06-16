@@ -57,7 +57,7 @@
         <div class="banner">
           <h1>Welcome to Crafty</h1>
           <p>Explore our collection of unique, handcrafted items made with love and creativity.</p>
-          <button>Discover Now</button>
+          <button><a href="#team">Discover Now</a></button>
         </div>
       </header>
 
@@ -163,106 +163,109 @@
           <div class="underline"></div>
         </div>
         <div class="cards-wrapper">
-          <div class="card" >
+          <div class="card" id="card-1">
             <div class="card-img-wrapper">
-              <img src="images/person-1.jpg" alt="CEO" />
+                <img src="images/product0.1.jpg" alt="basket1" class="card-img" />
+                <img src="images/product0.2.jpg" alt="basket2" class="card-img" style="display:none;" />
+                <img src="images/product0.3.jpg" alt="basket3" class="card-img" style="display:none;" />
             </div>
             <div class="card-info">
-              <h2>John Smith</h2>
-              <h3>CEO</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
+                <h2>Wooven Basket</h2>
+                <h3>Price: XYZ</h3>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, impedit!"
+                </p>
+                <button onclick="showNextImage('card-1')">Next</button>
             </div>
-          </div>
-          <div class="card" >
-            <div class="card-img-wrapper">
-              <img src="images/person-2.jpg" alt="Designer" />
-            </div>
-            <div class="card-info">
-              <h2>Ann Brown</h2>
-              <h3>Designer</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="card-img-wrapper">
-              <img src="images/person-2.jpg" alt="Designer" />
-            </div>
-            <div class="card-info">
-              <h2>Ann Brown</h2>
-              <h3>Designer</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/person-3.jpg" alt="Architect" />
-            </div>
-            <div class="card-info">
-              <h2>Mary Doe</h2>
-              <h3>Architect</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
         </div>
+        
+        <div class="card" id="card-2">
+          <div class="card-img-wrapper">
+              <img src="images/product3.1.jpg" alt="dolls" class="card-img" />
+              <img src="images/product3.2.jpg" alt="dolls" class="card-img" style="display:none;" />
+          
+          </div>
+          <div class="card-info">
+              <h2>Wooden Dolls</h2>
+              <h3>Price: XYZ</h3>
+              <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores, impedit!"
+              </p>
+              <button onclick="showNextImage('card-2')">Next</button>
+          </div>
+      </div>
+      <div class="card" id="card-3">
+        <div class="card-img-wrapper">
+            <img src="images/product2.1.png" alt="Photo - Frame" class="card-img" />
+            <img src="images/product2.2.jpg" alt="Photo - Frame" class="card-img" style="display:none;" />
+            <img src="images/product2.3.jpg" alt="Photo - Frame" class="card-img" style="display:none;" />
+        
+        </div>
+        <div class="card-info">
+            <h2>Paper Photo - Frame</h2>
+            <h3>Price: XYZ</h3>
+            <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, impedit!"
+            </p>
+            <button onclick="showNextImage('card-3')">Next</button>
+        </div>
+    </div>
+    </div>
         <div class="cards-wrapper">
-          <div class="card" >
+          <div class="card" id="card-4">
             <div class="card-img-wrapper">
-              <img src="images/person-1.jpg" alt="CEO" />
+                
+              <img src="images/product1.1.jpg" alt="Suit-Case" class="card-img" />
+              <img src="images/product1.2.webp" alt="Suit-Case" class="card-img" style="display:none;" />
             </div>
             <div class="card-info">
-              <h2>John Smith</h2>
-              <h3>CEO</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
+                <h2>Suit-Case</h2>
+                <h3>Price: XYZ</h3>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, impedit!"
+                </p>
+                <button onclick="showNextImage('card-4')">Next</button>
             </div>
+        </div>
+        <div class="card" id="card-5">
+          <div class="card-img-wrapper">
+
+              <img src="images/product6.0.webp" alt="dolls" class="card-img" />
+                <img src="images/product6.1.jpg" alt="dolls" class="card-img" style="display:none;" />
+                <img src="images/product6.2.webp" alt="dolls" class="card-img" style="display:none;" />
+          
           </div>
-          <div class="card" >
-            <div class="card-img-wrapper">
-              <img src="images/person-2.jpg" alt="Designer" />
-            </div>
-            <div class="card-info">
-              <h2>Ann Brown</h2>
-              <h3>Designer</h3>
+          <div class="card-info">
+              <h2>Wooven Basket</h2>
+              <h3>Price: XYZ</h3>
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores, impedit!"
               </p>
-              <button>Read More</button>
-            </div>
+              <button onclick="showNextImage('card-5')">Next</button>
           </div>
+      </div>
          
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/person-3.jpg" alt="Architect" />
-            </div>
-            <div class="card-info">
-              <h2>Mary Doe</h2>
-              <h3>Architect</h3>
-              <p>
+      <div class="card" id="card-6">
+        <div class="card-img-wrapper">
+            <img src="images/product5.0.jpg" alt="Designer Plates" class="card-img" />
+            <img src="images/product5.1.jpg" alt="Designer Plates" class="card-img" style="display:none;" />
+        
+        </div>
+        <div class="card-info">
+            <h2>Designer Plates</h2>
+            <h3>Price: XYZ</h3>
+            <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores, impedit!"
-              </p>
-              <button>Read More</button>
-            </div>
+            </p>
+            <button onclick="showNextImage('card-6')">Next</button>
+        </div>
+    </div>
           </div>
         </div>
       </section>

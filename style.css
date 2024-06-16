@@ -701,8 +701,8 @@ nav ul li a:hover {
 }
 
 .card {
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   position: relative;
@@ -756,7 +756,7 @@ nav ul li a:hover {
   font-family: "Muli", serif;
   font-size: 2rem;
   font-weight: 500;
-  color: #a52a2a;
+  color: #c29525;
   margin-bottom: 1rem;
 }
 
@@ -1150,45 +1150,5 @@ nav ul li a:hover {
 
   .footer {
     height: 18rem;
-  }
-}
-@keyframes slideRight {
-  0%{
-      transform: translateX(-100px);
-      opacity:0;
-  }
-  100%{
-      transform: translateX(0px);
-      opacity: 1;
-  }
-}
-@keyframes slideTop {
-  0%{
-      transform: translateY(100px);
-      opacity:0;
-  }
-  100%{
-      transform: translateY(0px);
-      opacity: 1;
-  }
-}
-@keyframes slideBottom {
-  0%{
-      transform: translateY(-100px);
-      opacity:0;
-  }
-  100%{
-      transform: translateY(0px);
-      opacity: 1;
-  }
-}
-@keyframes slideLeft {
-  0%{
-      transform: translateX(100px);
-      opacity:0;
-  }
-  100%{
-      transform: translateX(0px);
-      opacity: 1;
   }
 }

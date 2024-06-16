@@ -92,42 +92,22 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('contact').appendChild(successMessage);
     }
 });
-document.addEventListener('DOMContentLoaded', function() {
-  // const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const slider = document.querySelector('.slider');
-  const cards = document.querySelectorAll('.card');
+function showNextImage(cardId) {
+  const card = document.getElementById(cardId);
+  const images = card.querySelectorAll('.card-img');
+  let currentImageIndex = -1;
 
-  let currentIndex = 0;
-  const cardWidth = cards[0].offsetWidth + 20; // Adjusted width including margin
-
-  // Show initial slide
-  showSlide(currentIndex);
-
-  function showSlide(index) {
-      // Ensure index is within bounds
-      if (index < 0) {
-          currentIndex = cards.length - 1;
-      } else if (index >= cards.length) {
-          currentIndex = 0;
-      } else {
-          currentIndex = index;
+  images.forEach((img, index) => {
+      if (img.style.display !== 'none') {
+          currentImageIndex = index;
       }
-
-      // Calculate transform value
-      const transformValue = -currentIndex * cardWidth;
-      slider.style.transform = `translateX(${transformValue}px)`;
-  }
-
-  // Event listeners for navigation buttons
-  // prevButton.addEventListener('click', function() {
-  //     showSlide(currentIndex - 1);
-  // });
-
-  nextButton.addEventListener('click', function() {
-      showSlide(currentIndex + 1);
   });
-});
+
+  images[currentImageIndex].style.display = 'none';
+  const nextImageIndex = (currentImageIndex + 1) % images.length;
+  images[nextImageIndex].style.display = 'block';
+}
+
 
 
 
